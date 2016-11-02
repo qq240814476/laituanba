@@ -1,0 +1,787 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/Shop_details_toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_background"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/Shop_details_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/Shop_details_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/Shop_details_off"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_action_share" />
+
+        <ImageView
+            android:id="@+id/Shop_details_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_action_favorite_off" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Shop_details_bottomlayout"
+        android:layout_below="@+id/Shop_details_toplayout"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@drawable/yy_calendar_bkg"
+                android:orientation="vertical"
+                android:padding="0dp" >
+
+                <TextView
+                    android:id="@+id/Shop_details_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="13dp"
+                    android:singleLine="true"
+                    android:text="新东方四六级"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="7dp" >
+
+                    <ImageView
+                        android:id="@+id/Shop_details_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/shop_photo_frame"
+                        android:paddingBottom="11dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="9dp"
+                        android:src="@drawable/f20" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp" >
+
+                        <ImageView
+                            android:id="@+id/Shop_details_star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:padding="0dp"
+                            android:src="@drawable/star4" />
+
+                        <TextView
+                            android:id="@+id/shop_details_money1"
+                             android:layout_below="@+id/Shop_details_star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="费用: ¥"
+                            android:textColor="#666666"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/Shop_details_money"
+                           
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/shop_details_money1"
+                            android:layout_toRightOf="@+id/shop_details_money1"
+                            android:text="350"
+                            android:textColor="#666666"
+                            android:textSize="15sp" />
+
+                       <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/shop_details_money1"
+                            android:layout_alignParentBottom="true"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="已入团人数:"
+                                android:textColor="#666666"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tuan_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textColor="#666666"
+                                android:textSize="15sp" />
+
+                           
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、 -->
+
+            <RelativeLayout
+                android:id="@+id/shop_details_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopdetails_list_bkg" >
+
+                <ImageView
+                    android:id="@+id/shop_image_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="13dp"
+                    android:src="@drawable/ic_address_big" />
+
+                <TextView
+                    android:id="@+id/shop_details_address_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_toRightOf="@+id/shop_image_flag"
+                    android:paddingBottom="13dp"
+                    android:paddingTop="13dp"
+                    android:text="大连海事大学创业大厦"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shop_details_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopdetails_list_bkg" >
+
+                <ImageView
+                    android:id="@id/shop_image_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="13dp"
+                    android:src="@drawable/ic_phone_big" />
+
+                <TextView
+                    android:id="@+id/shop_details_phone_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/shop_image_flag"
+                    android:paddingBottom="13dp"
+                    android:paddingTop="13dp"
+                    android:text="13716551797"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shop_details_ding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopdetails_list_bkg"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@id/shop_image_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="13dp"
+                    android:src="@drawable/detail_booking_icon_big" />
+
+                <TextView
+                    android:id="@+id/shop_details_ding_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/shop_image_flag"
+                    android:paddingBottom="13dp"
+                    android:paddingTop="13dp"
+                    android:text="提前订座"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/shop_details_ding_hui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/shop_details_ding_txt"
+                    android:src="@drawable/ic_booking_discount_big" />
+
+                <ImageView
+                    android:id="@+id/shop_details_ding_jiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/shop_details_ding_hui"
+                    android:src="@drawable/ic_booking_reward_big" />
+
+                <ImageView
+                    android:id="@+id/shop_image_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shop_details_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopdetails_list_bkg"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/shop_image_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="13dp"
+                    android:src="@drawable/detail_cardicon_big" />
+
+                <TextView
+                    android:id="@+id/shop_details_card_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/shop_image_more"
+                    android:layout_toRightOf="@+id/shop_image_card"
+                    android:paddingBottom="13dp"
+                    android:paddingTop="13dp"
+                    android:singleLine="true"
+                    android:text="会员专享9.5折，免费申请"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@id/shop_image_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shop_details_quan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopdetails_list_bkg"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/shop_image_quan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="13dp"
+                    android:src="@drawable/detail_couponicon_big" />
+
+                <TextView
+                    android:id="@+id/shop_details_quan_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/shop_image_more"
+                    android:layout_toRightOf="@+id/shop_image_quan"
+                    android:paddingBottom="13dp"
+                    android:paddingTop="13dp"
+                    android:singleLine="true"
+                    android:text="四合院美食到店减500，午市集..."
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@id/shop_image_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shop_details_tuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopdetails_list_bkg"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/shop_image_tuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="13dp"
+                    android:src="@drawable/detail_grouponicon_big" />
+
+                <TextView
+                    android:id="@+id/shop_details_tuan_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/shop_image_more"
+                    android:layout_toRightOf="@+id/shop_image_tuan"
+                    android:paddingBottom="13dp"
+                    android:paddingTop="13dp"
+                    android:singleLine="true"
+                    android:text="仅售255元后海16号代金券1张"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@id/shop_image_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shop_details_tuijian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shopdetails_list_bkg"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/shop_tuijian_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="8dp"
+                    android:text="网友推荐 ："
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shop_details_tuijian_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_tuijian_top"
+                    android:layout_toLeftOf="@+id/shop_image_more"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="15dp"
+                    android:text="点评详细点评详细点评详细点评详细点评详细点评详细点评详细点评详细点
+
+评详细点评详细点评详细点评"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@id/shop_image_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shop_details_dianping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shopdetails_list_bkg"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/shop_dianping_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="8dp"
+                    android:text="点评(共1280条)："
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shop_details_dianping_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_dianping_top"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="15dp"
+                    android:text="绿_cat"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/shop_details_dianping_star"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_details_dianping_name"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/star3" />
+
+                <TextView
+                    android:id="@+id/shop_details_dianping_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_details_dianping_star"
+                    android:layout_toLeftOf="@+id/shop_image_more"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="7dp"
+                    android:text="点评详细点评详细点评详细点评详细点评详细点评详细点评详细点评详细点
+
+评详细"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/shop_details_dianping_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_details_dianping_txt"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="15dp"
+                    android:text="14-04-15 19:27"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@id/shop_image_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:id="@+id/shop_details_qita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shopdetails_list_bkg" >
+
+                <TextView
+                    android:id="@+id/shop_qita_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="8dp"
+                    android:text="其他信息："
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shop_details_qita_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_qita_top"
+                    android:layout_toLeftOf="@+id/shop_image_more"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:text="优惠规则，商家描述，评论"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@id/shop_image_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shop_details_fujin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shopdetails_list_bkg"
+                android:padding="0dp" >
+
+                <TextView
+                    android:id="@+id/shop_fujin_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:text="在这家店附近找："
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/shop_details_qita_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_fujin_top"
+                    android:background="#ADADAD"
+                    android:orientation="horizontal"
+                    android:paddingBottom="0.5dp" >
+
+                    <TextView
+                        android:id="@+id/shop_fujin_meishi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.2dp"
+                        android:layout_marginTop="0.2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_tab_background"
+                        android:gravity="center"
+                        android:paddingBottom="11dp"
+                        android:paddingTop="11dp"
+                        android:text="考研" />
+
+                    <TextView
+                        android:id="@+id/shop_fujin_jingdian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.2dp"
+                        android:layout_marginTop="0.2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_tab_background"
+                        android:gravity="center"
+                        android:paddingBottom="11dp"
+                        android:paddingTop="11dp"
+                        android:text="健身" />
+
+                    <TextView
+                        android:id="@+id/shop_fujin_jiudian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="0.2dp"
+                        android:layout_marginTop="0.2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_tab_background"
+                        android:gravity="center"
+                        android:paddingBottom="11dp"
+                        android:paddingTop="11dp"
+                        android:text="雅思" />
+
+                    <TextView
+                        android:id="@+id/shop_fujin_quanbu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_tab_background"
+                        android:gravity="center"
+                        android:paddingBottom="11dp"
+                        android:paddingTop="11dp"
+                        android:text="全部" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shop_details_fendian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shopdetails_list_bkg" >
+
+                <TextView
+                    android:id="@+id/shop_details_fendians_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/shop_image_more"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="14dp"
+                    android:text="其他2家分店"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@id/shop_image_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shop_details_kanguo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shopdetails_list_bkg" >
+
+                <TextView
+                    android:id="@+id/shop_details_kanguo_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/shop_image_more"
+                    android:paddingBottom="14dp"
+                    android:paddingTop="14dp"
+                    android:text="看过这家店的人还看过"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@id/shop_image_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/Shop_details_bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_button_bg"
+        android:paddingBottom="3dp"
+        android:paddingTop="5dp" >
+
+        <!--
+      <LinearLayout
+            android:id="@+id/Shop_details_bottom_img1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_checkin" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="签到留言"
+                android:textColor="#FF8C00"
+                android:textSize="13sp" />
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:id="@+id/Shop_details_bottom_img2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_photo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="我要入团"
+                android:textColor="#26a9e7"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Shop_details_bottom_img3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_comments" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="加入购物车"
+                android:textColor="#26a9e7"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

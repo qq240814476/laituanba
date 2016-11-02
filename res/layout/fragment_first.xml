@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="#FFFFFF" >
+
+    <!-- 搜索框 -->
+    <RelativeLayout
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="4"
+        >
+
+        <!-- <ImageButton
+            android:id="@+id/id_title_left_btn"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="3dp"
+            android:paddingRight="10dp" /> -->
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+            android:orientation="vertical"
+             android:background="#ffffff" >
+
+            <SearchView
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/search_kuang"
+                android:layout_width="fill_parent"
+                android:background="#ffffff"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+
+       <!--  <Button
+            android:id="@+id/search_but"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/search_layout"
+            android:text="@string/search" /> -->
+    </RelativeLayout>
+
+    <!-- 下面是滚动的图片 -->
+
+   <!--  <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+           <!--  <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/gundongtupian"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/bg_01"
+                android:orientation="horizontal" >
+            </LinearLayout> -->
+            <!-- 下面是课程选项 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <Button
+                         android:layout_margin="10dp"
+                        android:id="@+id/button_siliuji"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="四六级"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/bg_but"/>"
+                    <!-- <ImageView
+           android:id="@+id/button_kaoyan"
+            android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@drawable/background_kaoyan"/>
+ -->
+                    <Button
+                         android:layout_margin="10dp"
+                        android:id="@+id/button_kaoyan"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                         android:background="@drawable/bg_but"
+                         android:text="考研"
+                         android:textColor="#ffffff"
+                       />
+
+                    <Button
+                         android:layout_margin="10dp"
+                        android:id="@+id/button_jiaxiao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="驾校" 
+                        android:textColor="#ffffff"
+                         android:background="@drawable/bg_but"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="110dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+                    <Button
+                         android:layout_margin="10dp"
+                        android:id="@+id/button_buildbody"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="健身" 
+                        android:textColor="#ffffff"
+                         android:background="@drawable/bg_but"/>
+
+                    <Button
+                         android:layout_margin="10dp"
+                        android:id="@+id/button_xiaoyuzhong"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="小语种"
+                        android:textColor="#ffffff" 
+                         android:background="@drawable/bg_but"/>
+
+                    <Button
+                         android:layout_margin="10dp"
+                        android:id="@+id/button_else"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="其他"
+                        android:textColor="#ffffff"
+                         android:background="@drawable/bg_but" />
+                </LinearLayout>
+            </LinearLayout>
+<TextView
+                        android:gravity="left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="今日推荐"
+                        android:background="#26a9e7"
+                         android:textColor="#ffffff"
+                        android:textSize="25dp" />
+          <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/ShopListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout> 
+        </LinearLayout>
+ <!-- </ScrollView>  -->
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/lineStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:background="@drawable/title_background"
+    >
+
+    <ScrollView 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content">
+        <LinearLayout 
+         
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:orientation="horizontal" 
+     android:layout_marginTop="10dp"
+     
+       >
+<TextView
+     style="@style/EditTextStyle"
+         android:layout_width="0dp"
+         android:layout_weight="8"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/recom_info"
+            android:id="@+id/text_recom_info"
+            android:paddingTop="5dp"
+     android:paddingBottom="5dp"
+           
+           />
+
+
+<ToggleButton
+    android:id="@+id/recommended"
+    android:layout_width="0dp"
+    android:layout_weight="2"
+    android:layout_height="wrap_content"
+    android:checked="true"
+        android:textOn="on"
+        android:textOff="off"/>"
+</LinearLayout>
+
+    <!-- <TextView
+         style="@style/EditTextStyle"
+         android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/place_info"
+            android:id="@+id/text_place_info"
+           /> -->
+     <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/lineStyle"
+                android:layout_marginTop="25dp"
+                 >
+    <TextView
+         style="@style/EditTextStyle"
+         android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/re_new"
+            android:id="@+id/text_re_newl"
+           />
+     <TextView
+          style="@style/EditTextStyle"
+         android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="分享"
+            android:id="@+id/text_share"
+           />
+     </LinearLayout>
+       <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/lineStyle"
+                android:layout_marginTop="25dp"
+                 >
+     <TextView
+         style="@style/EditTextStyle"
+         android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/about_us"
+            android:id="@+id/text_about_us"
+             android:background="#ffffff"
+                   android:paddingTop="5dp"
+                   android:paddingBottom="5dp"
+           />
+      <TextView
+           style="@style/EditTextStyle"
+         android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="反馈"
+            android:id="@+id/text_feedback"
+             android:background="#ffffff"
+                   android:paddingTop="5dp"
+                   android:paddingBottom="5dp"
+           />
+      </LinearLayout>
+      
+    </LinearLayout>
+  </ScrollView>  
+
+</LinearLayout>

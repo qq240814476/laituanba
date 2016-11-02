@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF4444"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+    <fragment 
+     android:id="@+id/fra_login_title"
+     android:name="com.laituan.myfragment.login_title_fragment"
+     android:layout_width="fill_parent"
+     android:layout_height="0dp"
+     android:layout_weight="1"/>   
+<fragment 
+     android:id="@+id/fra_login_content"
+     android:name="com.laituan.myfragment.login_content_fragment"
+     android:layout_width="fill_parent"
+     android:layout_height="0dp"
+     android:layout_weight="9"/> 
+
+</LinearLayout>

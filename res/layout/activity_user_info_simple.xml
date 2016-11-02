@@ -1,0 +1,326 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/lineStyle"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+   >
+
+    <!--
+<fragment 
+     android:id="@+id/fra_userinfo_simple_title"
+     android:name="com.laituanba.Myfragment.userinfo_simple_title_fragment"
+     android:layout_width="fill_parent"
+      android:layout_height="0dp"
+     android:layout_weight="1"/>   
+<fragment 
+     android:id="@+id/fra_userinfo_simple_content"
+     android:name="com.laituanba.Myfragment.userinfo_simple_content_fragment"
+     android:layout_width="fill_parent"
+     
+      android:layout_height="0dp"
+     android:layout_weight="9"
+    
+/>
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center_vertical"
+        android:background="#26a9e7"
+         >
+
+        <TextView
+            android:id="@+id/userinfo_simple_back"
+            style="@style/titleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+             android:layout_marginLeft="10dp" 
+            android:layout_marginRight="10dp" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/keep"
+            style="@style/titleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+             android:layout_marginLeft="10dp" 
+            android:layout_marginRight="10dp" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/keep" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/user_info_simple"
+            android:textColor="@color/my_title_textcolor"
+             android:layout_marginLeft="10dp" 
+            android:layout_marginRight="10dp" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/MyMyScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            style="@style/lineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff" >
+
+            <ImageView
+                android:id="@+id/User_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/user" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/user_name" 
+                    android:textColor="#26a9e7"
+                    />
+
+                <EditText
+                    android:id="@+id/user_name"
+                    style="@style/EditTextStyle"
+                    
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:text="huang" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#26a9e7"
+                    android:gravity="end"
+                    android:text="@string/nick_name" />
+
+                <EditText
+                    android:id="@+id/nick_name"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:text="夏日" />
+            </LinearLayout>
+
+      
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#26a9e7"
+                    android:gravity="end"
+                    android:text="@string/gender" />
+
+                <EditText
+                    android:id="@+id/gender"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:text="女" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#26a9e7"
+                    android:gravity="end"
+                    android:text="@string/my_school" />
+
+                <EditText
+                    android:id="@+id/my_school"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:text="大连海事大学新区" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#26a9e7"
+                    android:gravity="end"
+                    android:text="@string/my_aim" />
+
+                <EditText
+                    android:id="@+id/my_aim"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:text="商务英语高级" />
+            </LinearLayout>
+                   <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                 android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textColor="#26a9e7"
+                    android:gravity="end"
+                    android:text="手机号" />
+
+                <EditText
+                   
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="7"
+                        android:inputType="phone"
+                        android:text="18018982345"
+                        />
+
+                    <Button
+                         style="@style/EditTextStyle"
+                        
+                        android:textColor="#FFFFFF"
+                        android:background="#26a9e7"
+                        android:id="@+id/edit_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:layout_marginRight="15dp"
+                        
+                        android:text="编辑" />
+ 
+            </LinearLayout>
+      <LinearLayout
+          android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:textColor="#26a9e7"
+                    android:gravity="end"
+                    android:text="密码" />
+
+                <EditText
+                   
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="7"
+                    android:inputType="textPassword"/>
+                <Button
+                     style="@style/EditTextStyle"
+                     android:textColor="#FFFFFF"
+                      android:background="#26a9e7"
+                        android:id="@+id/edit_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:layout_marginRight="15dp"
+                        android:text="编辑" />"
+            </LinearLayout>
+            
+     
+            
+            <LinearLayout
+                style="@style/buttonLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/edit_info"
+                    style="@style/buttonStyle"
+                    android:layout_gravity="center_horizontal"
+                    android:text="编辑" />
+
+              <!-- <Button
+                    android:id="@+id/edit_password"
+                    style="@style/buttonStyle"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/text_edit_password" />
+
+                <Button
+                    android:id="@+id/edit_phone_number"
+                    style="@style/buttonStyle"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/edit_number" />
+                      --> 
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

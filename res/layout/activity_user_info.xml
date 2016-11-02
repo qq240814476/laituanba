@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/title_background"
+    
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" 
+             android:background="#26a9e7">
+
+            <TextView
+                android:id="@+id/user_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/login"
+                android:textColor="@color/my_title_textcolor"
+                android:textSize="18sp" 
+                android:layout_marginLeft="10dp" 
+            android:layout_marginRight="10dp" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/user_info"
+                android:textColor="@color/my_title_textcolor"
+                android:textSize="25sp" 
+                android:layout_marginLeft="10dp" 
+            android:layout_marginRight="10dp" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+            
+            <TextView
+                android:id="@+id/user_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/register"
+                android:textColor="@color/my_title_textcolor"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp" 
+            android:layout_marginRight="10dp" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                 <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/lineStyle"
+                 >
+
+                
+                
+ 
+                 <TextView
+                    android:id="@+id/text_simple_info"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/simple_info"
+                   android:background="#ffffff"
+                   android:paddingTop="5dp"
+                   android:paddingBottom="5dp"></TextView>
+
+              <!--  <TextView
+                    android:id="@+id/text_my_test_past"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/my_test_past" />
+
+                <TextView
+                    android:id="@+id/text_my_test_now"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/my_test_now" />
+
+                <TextView
+                    android:id="@+id/text_my_test_will"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/my_test_will" />
+
+                <TextView
+                    android:id="@+id/text_my_course_past"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/my_course_past" />
+
+                <TextView
+                    android:id="@+id/text_my_course_now"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/my_course_now" />
+
+                <TextView
+                    android:id="@+id/text_my_course_will"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/my_course_will" />
+ -->
+ </LinearLayout>
+  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:layout_marginBottom="25dp"
+                 style="@style/lineStyle">
+  <TextView
+                    android:id="@+id/text_my_allorder"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                   android:paddingTop="5dp"
+                   android:paddingBottom="5dp"
+                    android:text="我的订单"
+                   android:background="#ffffff" />
+                <TextView
+                    android:id="@+id/text_my_buy"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                   android:paddingTop="5dp"
+                   android:paddingBottom="5dp"
+                    android:text="@string/my_now_buy"
+                    android:background="#ffffff"/>
+</LinearLayout>
+<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:layout_marginBottom="25dp"
+                 style="@style/lineStyle">
+                <TextView
+                    android:id="@+id/text_set"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="@string/set" 
+                   />
+                
+                 </LinearLayout>
+                 <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/lineStyle"
+                 >
+
+                 <TextView
+                    android:id="@+id/text_login_out"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="退出登录" 
+                    android:background="#ffffff"/>
+                 </LinearLayout>
+                 <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    android:text="咨询电话：0411-1234567"
+                    android:textColor="#111111" />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:gravity="start"
+                     android:padding="10dp"
+                     android:text="在线时间：10：00-23：00"
+                     android:textColor="#111111" />
+
+                 </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

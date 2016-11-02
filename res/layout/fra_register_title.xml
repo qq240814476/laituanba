@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/register_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/back"
+            android:textColor="@color/my_title_textcolor"
+            android:textSize="18sp" />
+
+      
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/register"
+            android:textColor="@color/my_title_textcolor"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!--
+<TextView android:layout_width="wrap_content"
+     android:layout_height="wrap_content" 
+     android:text="@string/main_page"
+     android:id="@+id/login_main_back"
+     android:layout_gravity="left"></TextView>"
+<TextView android:layout_width="wrap_content"
+     android:layout_height="wrap_content" 
+     android:text="@string/login"
+     android:layout_gravity="center_vertical"></TextView>
+<TextView android:layout_width="wrap_content"
+     android:layout_height="wrap_content" 
+     android:text="@string/register"
+     android:id="@+id/login_register_go"
+     android:layout_gravity="right"></TextView>
+    -->
+
+</LinearLayout>

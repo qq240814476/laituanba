@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fra_login_content_line"
+    style="@style/lineStyle"
+     android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        style="@style/lineStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/Login_user"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_name" />
+
+        <EditText
+            android:id="@+id/Login_password"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/user_password"
+            android:inputType="textPassword" />
+        <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">"
+        
+        <!-- <TextView
+          android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:background="#ffffff"
+           
+            /> -->
+
+        <CheckBox
+            android:id="@+id/rem_pw"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingLeft="35dp"
+             android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/rem_pass"
+             android:textColor="#26a9e7" />
+</LinearLayout>
+        <CheckBox
+            android:id="@+id/auto_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingLeft="35dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+             android:textColor="#26a9e7"
+            android:text="@string/login_auto" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp" >
+
+        <TextView
+            android:id="@+id/Login_OK"
+            style="@style/buttonStyle"
+            android:text="@string/login" />
+
+        <TextView
+            android:id="@+id/Login_wangjimima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Login_OK"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="@string/forget_password"
+            android:textSize="16sp" 
+             android:textColor="#26a9e7"/>
+    </RelativeLayout>
+
+</LinearLayout>

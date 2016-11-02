@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@id/titlerelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#26a9e7"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/Shoplist_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_back" />
+
+        <LinearLayout
+            android:id="@+id/Shoplist_shanghuleixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/Shoplist_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="其他信息"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Shop_details_more_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:singleLine="true"
+                 android:textColor="#ffffff"
+                android:text="商户名"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yy_list_bkg_line_bottom"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="营业时间"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/Shop_details_more_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每日/9:00-21:00"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yy_list_bkg_line_bottom"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="餐厅特色"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@id/Shop_details_more_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无线上网、免费停车、有下午茶"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yy_list_bkg_line_bottom"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="餐厅氛围"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@id/Shop_details_more_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="情侣约会、朋友聚餐、休闲小憩、商务宴请、家庭聚会"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

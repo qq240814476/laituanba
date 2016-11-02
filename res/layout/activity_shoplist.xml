@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@id/titlerelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#26a9e7"
+        android:gravity="center_vertical" >
+
+         <ImageView
+            android:id="@+id/Shoplist_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_back" />
+           
+
+        <LinearLayout
+            android:id="@+id/Shoplist_shanghuleixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+             <!--  <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="返回"
+            android:layout_marginLeft="10dp" 
+            android:layout_marginRight="10dp" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" /> -->
+
+            <TextView
+                android:layout_weight="2"
+                android:id="@+id/Shoplist_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="全部商户"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/Search_city_img"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/search_city" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/middlelinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlerelativelayout" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tuan_tab_linear_background"
+            android:paddingBottom="0.5dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0.5dp"
+            android:paddingTop="0dp" >
+
+            <TextView
+                android:id="@+id/Shoplist_title_textbtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:drawableRight="@drawable/ic_arrow_down_black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="热度"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tuan_tab_linear_background"
+            android:paddingBottom="0.5dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0.5dp"
+            android:paddingTop="0dp" >
+
+            <TextView
+                android:id="@+id/Shoplist_title_textbtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:drawableRight="@drawable/ic_arrow_down_black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="价格"
+                android:textColor="#666666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tuan_tab_linear_background"
+            android:paddingBottom="0.5dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0.5dp"
+            android:paddingTop="0dp" >
+
+            <TextView
+                android:id="@+id/Shoplist_title_textbtn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:drawableRight="@drawable/ic_arrow_down_black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="排序"
+                android:textColor="#666666" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ShopListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/middlelinearlayout" />
+
+    <ListView
+        android:id="@+id/Shoplist_toplist"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/titlerelativelayout"
+        android:background="#f4f4f4"
+        android:divider="@null"
+        android:listSelector="@drawable/search_more_morelistselect"
+        android:padding="10dp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/Shoplist_threelist"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/middlelinearlayout"
+        android:background="#ffffff"
+        android:divider="@null"
+        android:listSelector="@drawable/search_more_morelistselect"
+        android:padding="3dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/Shoplist_mainlist2"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/middlelinearlayout"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/Shoplist_onelist2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="#F4F4F4"
+            android:divider="@null"
+            android:listSelector="@drawable/search_more_morelistselect"
+            android:scrollbars="none" />
+
+        <ListView
+            android:id="@+id/Shoplist_twolist2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="17"
+            android:background="#FFFFFF"
+            android:divider="@null"
+            android:listSelector="@drawable/search_more_morelistselect" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Shoplist_mainlist1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/middlelinearlayout"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/Shoplist_onelist1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="#F4F4F4"
+            android:divider="@null"
+            android:listSelector="@drawable/search_more_morelistselect"
+            android:scrollbars="none" />
+
+        <ListView
+            android:id="@+id/Shoplist_twolist1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="17"
+            android:background="#FFFFFF"
+            android:divider="@null"
+            android:listSelector="@drawable/search_more_morelistselect" />
+    </LinearLayout>
+
+</RelativeLayout>

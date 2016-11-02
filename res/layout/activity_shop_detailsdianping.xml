@@ -1,0 +1,148 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/title_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/titlerelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+         android:background="#26a9e7" 
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/Shoplist_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+             android:layout_marginLeft="10dp" 
+            android:layout_marginRight="10dp" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_back" />
+
+        <LinearLayout
+            android:id="@+id/Shoplist_shanghuleixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                 android:layout_marginLeft="10dp" 
+            android:layout_marginRight="10dp" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+                android:id="@+id/Shoplist_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="添加点评"
+                 android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/Shop_details_more_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="1dp"
+                android:singleLine="true"
+                 android:textColor="#ffffff"
+                android:text="商户名"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <RatingBar
+                android:id="@+id/shop_dianping_ratingbar"
+                style="@style/custom_ratingbar_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#ADADAD"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/shop_dianping_edittext1"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#FFFFFF"
+                    android:gravity="start"
+                    android:hint="输入评价，人人为我，我为人人"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/shop_dianping_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.2dp"
+                    android:background="#FFFFFF"
+                    android:gravity="right"
+                    android:paddingBottom="5dp"
+                    android:text="还需输入30字"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#ADADAD"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <EditText
+                    android:id="@+id/shop_dianping_edittext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0.2dp"
+                    android:background="#FFFFFF"
+                    android:hint="点击输入人均(选填)"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/shop_dianping_OK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="10dp"
+                 android:background="#26a9e7"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="提　交"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

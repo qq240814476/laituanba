@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+     android:background="#ffffff"
+    >
+
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#26a9e7"
+        android:orientation="horizontal" >
+
+         <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="返回"
+            android:layout_marginLeft="10dp" 
+            android:layout_marginRight="10dp" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:layout_marginLeft="10dp" 
+            android:layout_marginRight="10dp" 
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="关于我们"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    
+   
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent"
+        > 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff" >
+            
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="来团吧平台的宗旨:"
+                android:textColor="#111111"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="    方便大学生发现比较提供同类商品的商家，在线上发起或参与团购，让消费者享受超低优惠。"
+                android:textColor="#111111" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="    为商家找到合适的消费者，进行有针对性的宣传。"
+                android:textColor="#111111" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="区别于传统团购平台:"
+                android:textColor="#111111" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="    主要提供的商品是与大学生课余生活息息相关的，如：驾校学车、健身、考研、学习第二外语等等。"
+                android:textColor="#111111" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="    打破了传统团购平台一成不变的固定局面，首创了“自主开团”的模式."
+                android:textColor="#111111" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="    与“限时抢购”模式相结合，以迎合本团购网站商品的特殊性并给予消费者更大的权利与自主性。"
+                android:textColor="#111111" />
+
+            <TextView
+                android:id="@+id/tv_goMyshop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:text="意见反馈：(邮箱)"
+                android:textColor="#111111"
+                android:textSize="17sp" />
+
+             <TextView
+               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:text="请记住我们的logo和网址"/>
+               <ImageView
+            android:src="@drawable/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp" />
+         </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>
